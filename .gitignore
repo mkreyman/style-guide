@@ -1,0 +1,6 @@
+.idea
+.vagrant
+node_modules
+bower_components
+/app/dist
+.DS_Store

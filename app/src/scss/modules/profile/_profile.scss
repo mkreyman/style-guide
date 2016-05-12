@@ -1,0 +1,8 @@
+@import "profile__header",
+        "profile__overview",
+        "profile__nav",
+        "profile__section";
+
+.profile__heading {
+  extend: %style-as-h1;
+}

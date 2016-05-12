@@ -1,0 +1,60 @@
+// Colors
+$salmon: #DF725A;
+$night: #3D3935;
+$warmGray1: #A59C94;
+$warmGray2: #C9C4BF;
+$warmGray3: #D7D2CB;
+$lightGray: #EDEBEA;
+$offWhite: #F7F6F5;
+$powderBlue: #ABDCE2;
+$ronchi: #EAB454;
+$zorba: #A59C94;
+$trueWhite: #ffffff;
+$contessa: #bf725a;
+
+// Font Names
+$openSans: 'OpenSans-Regular';
+$akzidenz: 'AkzidenzGroteskBE-MdCn';
+$chronicalDeckSemi: 'ChronicleDeck-Semi';
+$chronicalDeckRoman: 'ChronicleDeck-Roman';
+
+%is-serif { font-family: $chronicalDeckRoman; }
+%is-sans-serif { font-family: $openSans; }
+
+%style-as-h1 {
+  font: normal normal normal 2.25rem/1.375 $akzidenz, sans-serif;
+  text-transform: uppercase;
+  color: #8b8280;
+}
+%style-as-h2 {
+  font: normal normal normal 1.562rem/1.2 $akzidenz, sans-serif;
+  text-transform: uppercase;
+  color: #EDEBEA;
+}
+%style-as-h3 {
+  font: normal normal normal 1.437rem/1.35 $akzidenz, sans-serif;
+  text-transform: uppercase;
+}
+%style-as-h4 {
+  font: normal normal normal 0.75rem/1.75 $chronicalDeckSemi, serif;
+  text-transform: uppercase;
+}
+%style-as-h5 {
+  font: normal normal normal 1.31rem/1.57 $chronicalDeckRoman, serif;
+}
+%style-as-h6 {
+  font: normal normal normal 1.187rem/1.68 $chronicalDeckRoman, serif;
+}
+%style-as-p1 {
+  font: normal normal normal 0.937rem/1.2 $chronicalDeckRoman, serif;
+}
+%style-as-p2 {
+  font: normal normal normal 0.75rem/1.6 $openSans, sans-serif;
+}
+
+
+
+// @include screen(0, $smallTabletBreakpoint){}
+// @include screen($smallTabletBreakpoint, $largeTabletBreakpoint){}
+// @include screen($largeTabletBreakpoint, $desktopBreakpoint){}
+// @include min-screen($desktopBreakpoint){}

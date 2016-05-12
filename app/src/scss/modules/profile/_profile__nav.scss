@@ -1,0 +1,11 @@
+.profile__nav {
+  @extend %container;
+}
+.profile__nav__items {
+  @extend %col--8;
+  list-style-type: none;
+  text-align: center;
+}
+.profile__nav__item {
+  display: inline;
+}

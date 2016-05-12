@@ -1,0 +1,49 @@
+
+<section class="demo-section">
+  <h1>Modals</h1>
+  <div class="demo-section__panel">
+    <div class="demo-section__panel-item">
+      <button id="demo__modalToggle" class="btn">Toggle Modal</button>
+      <div id="demo__modal" class="modal">
+        <div class="modal__container">
+          <div class="modal__header">
+            <h3 class="modal__header-title">Keep Me Updated</h3>
+
+            <button id="demo__modalClose" {{action 'close'}} type="button" class="modal__header-close" data-dismiss="modal" aria-hidden="true"><i class="icon--exit icon--light"></i></button>
+
+          </div>
+          <hr class="divider--hor-square">
+          <div class="modal__body">
+            <p>Learn more about what’s happening with Harken by joining our email list. We’ll remind you about open enrollment in Atlanta and Chicago and wherever we go next.</p>
+          </div>
+          <div class="modal__footer">
+            <button id="demo__modalSubmit" class="btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo-section__panel">
+    <div class="demo-section__panel-item">
+      <button id="demo__modalFullScreenToggle" class="btn">Toggle Full Screen Modal</button>
+      <div id="demo__modalFullScreen" class="modal modal--is-full-screen">
+        <div class="modal__overlay modal__overlay--has-lifestyle-bg"></div>
+        <div class="modal__container">
+          <div class="modal__header">
+            <h3 class="modal__header-title">Keep Me Updated</h3>
+
+            <button id="demo__modalFullScreenClose" {{action 'close'}} type="button" class="modal__header-close" data-dismiss="modal" aria-hidden="true"><i class="icon--exit icon--light"></i></button>
+
+          </div>
+          <hr class="divider--hor-square">
+          <div class="modal__body">
+            <p>Learn more about what’s happening with Harken by joining our email list. We’ll remind you about open enrollment in Atlanta and Chicago and wherever we go next.</p>
+          </div>
+          <div class="modal__footer">
+            <button id="demo__modalFullScreenSubmit" class="btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

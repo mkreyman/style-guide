@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demos for Harken CSS</title>
+	<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+	<div class="page">
+		<header class="page__header">
+			<div class="page__header__container">
+				<nav class="page__header__nav">
+					@@include('../partials/page__header__nav.html')
+				</nav>
+				<div class="page__header__menu">
+					@@include('../partials/page__header__menu.html')
+				</div>
+			</div>
+		</header>
+		<div class="page__sidebar">
+			@@include('../partials/page__sidebar.html')
+		</div>
+		<div class="page__main">
+			<div class="page__main__container">
+				<div class="profile">
+					<header class="profile__header">
+						<h1 class="profile__header__greeting">Good Afternoon, Janey</h1>
+						<div class="profile__header__picture">
+							<img src="/assets/img/trainer_girl.jpg" alt="profile picture" class="image--responsive">
+						</div>
+						<div class="profile__header__overview">
+							<h3 class="profile__heading">Member Information</h3>
+							<div class="profile__overview__panel">
+								<span class="profile__overview__label">Member Plan:</span>
+								<span class="profile__overview__field">Care Silver II</span>
+								<span class="profile__overview__label">Member ID #:</span>
+								<span class="profile__overview__field">JT 70938294KLMD 01</span>
+								<span class="profile__overview__label">Birth Date:</span>
+								<span class="profile__overview__field">11/20/1970</span>
+							</div>
+							<div class="profile__overview__panel">
+								<span class="profile__overview__label">Rx BIN:</span>
+								<span class="profile__overview__field">610279</span>
+								<span class="profile__overview__label">PCN:</span>
+								<span class="profile__overview__field">9999</span>
+								<span class="profile__overview__label">Rx GRP:</span>
+								<span class="profile__overview__field">UHealth</span>
+							</div>
+							<div class="profile__overview__panel">
+
+							</div>
+						</div> <!-- /.profile__overview -->
+					</header> <!-- /.profile__header -->
+					<div class="profile__nav">
+						<ul class="profile__nav__items">
+							<li class="profile__nav__item">
+								<a href="#" class="profile__nav__link">Janey</a>
+							</li>
+							<li class="profile__nav__item">
+								<a href="#" class="profile__nav__link">Tom</a>
+							</li>
+							<li class="profile__nav__item">
+								<a href="#" class="profile__nav__link">Alexandria</a>
+							</li>
+							<li class="profile__nav__item">
+								<a href="#" class="profile__nav__link">George</a>
+							</li>
+							<li class="profile__nav__item">
+								<a href="#" class="profile__nav__link">Charlie</a>
+							</li>
+						</ul>
+					</div> <!-- /.profile__nav -->
+
+					@@include('./_account-settings.html')
+
+				</div> <!-- .profile -->
+			</div> <!-- /.page__main__container -->
+		</div> <!-- /.page__main -->
+		<div class="page__footer">
+			@@include('../partials/page__footer.html')
+		</div>
+	</div>
+	<script src="/js/vendor/fontsmoothie.min.js"></script>
+</body>
+</html>

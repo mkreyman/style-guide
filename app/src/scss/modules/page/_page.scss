@@ -1,0 +1,12 @@
+@import "page__header",
+        "page__header__nav",
+        "page__header__menu",
+        "page__main",
+        "page__sidebar",
+        "page__footer";
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+}

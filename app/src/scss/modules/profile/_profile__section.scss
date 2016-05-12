@@ -1,0 +1,88 @@
+.profile__section {
+  @extend %container;
+  background: $offWhite;
+}
+
+.profile__section__container {
+
+}
+.profile__section__header {
+  position: relative;
+  background: $lightGray;
+  padding: 1rem;
+}
+.profile__section__heading {
+  @extend .profile__heading;
+  margin: 0px;
+}
+.profile__section__panel {
+  @extend %col--4;
+  padding: 33px 65px;
+}
+.profile__section__menu {
+  @extend %col--2;
+  position: absolute;
+  right: 0px;
+  top: 1.2rem;
+  text-align: right;
+}
+.profile__section__field,
+.profile__section__label {
+  margin-bottom: 20px;
+}
+.profile__section__label {
+  @extend %col--4;
+  @extend %col--is-left;
+  @extend %col--is-first;
+  @extend %style-as-p1;
+  display: block;
+  padding-left: 0px;
+  color: $night;
+}
+
+.profile__section__label--align-right {
+  text-align: right;
+}
+.profile__section__field {
+  @extend %col--4;
+  @extend %col--is-right;
+  @extend .field;
+  clear: right;
+}
+
+.profile__section__submit {
+  @extend %col--4;
+  @extend %col--is-right;
+  @extend .field;
+  padding-top: 2rem;
+  clear: right;
+  text-align: right;
+}
+.profile__section__submit a {
+  line-height: 3.2rem;
+  margin-right: 1rem;
+
+}
+.profile__section__submit .btn {
+  float: right;
+}
+.profile__section__label--legal,
+.profile__section__field--legal {
+
+}
+.profile__section__label--legal {
+  @extend %col--is-left;
+  @extend %col--is-first;
+  @extend %col--is-full-width;
+  @extend %style-as-p1;
+  color: $night;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+.profile__section__field--legal{
+  @extend %col--is-left;
+  @extend %col--is-first;
+  @extend %col--is-full-width;
+  @extend %style-as-p2;
+
+}

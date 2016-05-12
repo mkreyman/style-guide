@@ -1,0 +1,6 @@
+.page__main {
+  padding: 5rem 0px;
+}
+.page__main__container {
+  @extend %container;
+}

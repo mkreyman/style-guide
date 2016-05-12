@@ -1,0 +1,21 @@
+.page__header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: $lightGray;
+  z-index: 2;
+}
+
+.page__header__container {
+  @extend %container;
+}
+.page__header__nav {
+  @extend %col--8;
+
+}
+.page__header__menu {
+  @extend %col--2;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}

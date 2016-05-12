@@ -1,0 +1,18 @@
+.profile__header {
+  @extend %container;
+}
+.profile__header__greeting {
+  @extend %col--8;
+  @extend %col--is-right;
+}
+.profile__header__picture {
+  @extend %col--1;
+  //width: 145px
+
+  max-height: 7.8125rem;
+  overflow: hidden;
+}
+.profile__header__overview {
+  @extend %col--7;
+  @extend %col--is-left;
+}

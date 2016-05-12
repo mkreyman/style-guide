@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demos for Harken CSS</title>
+	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/demo.css">
+</head>
+<body>
+	<div class="page">
+		<header class="page__header">
+			<div class="page__header__container">
+				<nav class="page__header__nav">
+					@@include('../partials/page__header__nav.html')
+				</nav>
+				<div class="page__header__menu">
+					@@include('../partials/page__header__menu.html')
+				</div>
+			</div>
+		</header>
+		<div id="demo_sidebar" class="page__sidebar">
+			@@include('../partials/page__sidebar.html')
+		</div>
+		<div class="page__main">
+			<div class="page__main__container">
+				@@include('./_type.html')
+				@@include('./_buttons.html')
+				@@include('./_icons.html')
+				@@include('./_dividers.html')
+				@@include('./_fields.html')
+				@@include('./_modal.html')
+			</div>
+		</div>
+		<div class="page__footer">
+			@@include('../partials/page__footer.html')
+		</div>
+	</div>
+	<script src="/js/vendor/fontsmoothie.min.js"></script>
+	@@include('./_demo.html')
+</body>
+</html>

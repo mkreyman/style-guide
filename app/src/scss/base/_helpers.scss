@@ -1,0 +1,10 @@
+.is-serif {
+  @extend %style-as-p1;
+}
+.is-sans-serif {
+  @extend %style-as-p2;
+}
+.image--responsive {
+  max-width: 100%;
+  height: auto;
+}

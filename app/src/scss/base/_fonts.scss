@@ -1,0 +1,49 @@
+// Custom Fonts
+@font-face {
+    font-family:'AkzidenzGroteskBE-MdCn';
+    src: url('/assets/fonts/akzidenz/AkzidenzGroteskBE-MdCn_gdi.eot');
+    src: url('/assets/fonts/akzidenz/AkzidenzGroteskBE-MdCn_gdi.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/akzidenz/AkzidenzGroteskBE-MdCn_gdi.woff') format('woff'),
+    url('/assets/fonts/akzidenz/AkzidenzGroteskBE-MdCn_gdi.ttf') format('truetype'),
+    url('/assets/fonts/akzidenz/AkzidenzGroteskBE-MdCn_gdi.svg#AkzidenzGroteskBE-MdCn') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-2212;
+}
+@font-face {
+    font-family:'ChronicleDeck-Roman';
+    src: url('/assets/fonts/chronicle_deck/ChronicleDeck-Roman_gdi.eot');
+    src: url('/assets/fonts/chronicle_deck/ChronicleDeck-Roman_gdi.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/chronicle_deck/ChronicleDeck-Roman_gdi.woff') format('woff'),
+    url('/assets/fonts/chronicle_deck/ChronicleDeck-Roman_gdi.ttf') format('truetype'),
+    url('/assets/fonts/chronicle_deck/ChronicleDeck-Roman_gdi.svg#ChronicleDeck-Roman') format('svg');
+    font-weight: 325;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+@font-face {
+    font-family:'ChronicleDeck-Semi';
+    src: url('/assets/fonts/chronicle_deck_semibold/ChronicleDeck-Semi_gdi.eot');
+    src: url('/assets/fonts/chronicle_deck_semibold/ChronicleDeck-Semi_gdi.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/chronicle_deck_semibold/ChronicleDeck-Semi_gdi.woff') format('woff'),
+    url('/assets/fonts/chronicle_deck_semibold/ChronicleDeck-Semi_gdi.ttf') format('truetype'),
+    url('/assets/fonts/chronicle_deck_semibold/ChronicleDeck-Semi_gdi.svg#ChronicleDeck-Semi') format('svg');
+    font-weight: 375;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+@font-face {
+    font-family:'OpenSans-Regular';
+    src: url('/assets/fonts/open_sans/OpenSans_gdi.eot');
+    src: url('/assets/fonts/open_sans/OpenSans_gdi.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/open_sans/OpenSans_gdi.woff') format('woff'),
+    url('/assets/fonts/open_sans/OpenSans_gdi.otf') format('opentype'),
+    url('/assets/fonts/open_sans/OpenSans_gdi.svg#OpenSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}

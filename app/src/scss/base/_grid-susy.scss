@@ -1,0 +1,94 @@
+@import "../vendor/media-queries",
+        "../vendor/susy/susy";
+
+$mobileBreakpoint: 23.437rem;
+$smallTabletBreakpoint: 48rem;
+$largeTabletBreakpoint: 64rem;
+$desktopBreakpoint: 83.375rem;
+$columnCount: 12;
+$susy: (
+  container: $desktopBreakpoint,
+  global-box-sizing: border-box,
+  columns: $columnCount,
+  gutters: .25,
+  gutter-position: inside,
+);
+
+@include border-box-sizing;
+
+@mixin generate-columns($columns, $deviceBreakpoint: null) {
+  @if $deviceBreakpoint != null {
+    @media screen and ($deviceBreakpoint) {
+      &--0 {
+          display: none;
+      }
+      @for $i from 1 through $columns {
+        &--#{$i} {
+            @include span($i of $columns);
+        }
+      }
+    }
+  } @else {
+    &--0 {
+        display: none;
+    }
+    @for $i from 1 through $columns {
+      &--#{$i} {
+        @include span($i of $columns);
+      }
+    }
+  }
+}
+
+%container {
+  @include container($desktopBreakpoint);
+  position: relative;
+}
+
+%all-devices {
+  @include generate-columns($columnCount);
+}
+%mobile {
+  @include generate-columns($columnCount, 'max-width: ' + $mobileBreakpoint);
+}
+%small-tablet {
+  @include generate-columns($columnCount, 'min-width: ' + $smallTabletBreakpoint);
+}
+%large-tablet {
+  @include generate-columns($columnCount, 'min-width: ' + $largeTabletBreakpoint);
+}
+%desktop {
+  @include generate-columns($columnCount, 'min-width: ' + $desktopBreakpoint);
+}
+
+%pull-left {
+  float: left;
+}
+
+%pull-right {
+  float: right;
+}
+
+%hide-on-mobile {
+  @include screen(0, $smallTabletBreakpoint) {
+    display: none !important;
+  }
+}
+
+%hide-on-small-tablet {
+  @include screen($smallTabletBreakpoint, $largeTabletBreakpoint) {
+    display: none !important;
+  }
+}
+
+%hide-on-large-tablet {
+  @include screen($largeTabletBreakpoint, $desktopBreakpoint) {
+    display: none !important;
+  }
+}
+
+%hide-on-desktop {
+  @include min-screen($desktopBreakpoint) {
+    display: none !important;
+  }
+}

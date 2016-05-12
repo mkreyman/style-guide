@@ -1,0 +1,90 @@
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem 0.25rem 1.5rem;
+  background-color: $salmon;
+  border: 0px;
+  color: $offWhite;
+  text-decoration: none;
+  font-family: $akzidenz, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &:hover {
+    background-color: $contessa;
+  }
+}
+.btn--light {
+  @extend .btn;
+  border: 1px solid $night;
+  background-color: $trueWhite;
+  color: $night;
+  &:hover {
+    background-color: darken($trueWhite, 2%);
+    border: 1px solid lighten($night, 2%);
+  }
+}
+.btn--dark {
+  @extend .btn;
+  //padding: 1rem 3rem 0.5rem 3rem;
+  border: 5px solid $night;
+  background-color:$night;
+  color: $offWhite;
+  box-shadow: inset 1px 1px 0px $warmGray1, inset -1px -1px 0px $warmGray1;
+  &:hover {
+    background-color: lighten($night, 2%);
+    border: 5px solid lighten($night, 2%);
+  }
+}
+.btn--scroll-down{
+  @extend .btn--dark;
+  position: relative;
+  margin-bottom: 23px;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+  	height: 0;
+    bottom: -23px;
+  	border-left: 12px solid transparent;
+  	border-right: 12px solid transparent;
+  	border-top: 11px solid $night;
+    left: 50%;
+    margin-left: -12px;
+  }
+}
+.btn--scroll-up{
+  @extend .btn--dark;
+  position: relative;
+  margin-top: 23px;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+  	height: 0;
+    top: -23px;
+  	border-left: 12px solid transparent;
+  	border-right: 12px solid transparent;
+  	border-bottom: 11px solid $night;
+    left: 50%;
+    margin-left: -12px;
+  }
+}
+.btn--toggle-view {
+  @extend .btn--light;
+  padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+  font-family: $chronicalDeckRoman, serif;
+  font-size: 0.75rem;
+  letter-spacing: normal;
+  text-transform: lowercase;
+  opacity: 0.5;
+  margin-right: -5px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.btn--toggle-view.btn--active {
+  opacity: 1;
+}

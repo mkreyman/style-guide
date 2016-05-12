@@ -1,0 +1,97 @@
+.field {
+  position: relative;
+}
+
+input, label, select {
+  display: block;
+}
+input[type="textbox"],
+input[type="password"] {
+  border: 2px solid $night;
+  border-width: 0px 0px 1px 0px;
+  background: transparent;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  color: $salmon;
+  outline: 0px;
+  &::-webkit-input-placeholder {
+    color: $salmon;
+  }
+  &::-moz-placeholder {
+    color: $salmon;
+  }
+  &:-ms-input-placeholder {
+    color: $salmon;
+  }
+}
+
+input[type="checkbox"] + label {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  top: 0px;
+  border: 1px solid $night;
+  background: transparent;
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 90%;
+    width: 90%;
+    left: 1px;
+    top: 1px;
+  }
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+  &:checked + label{
+    &:before {
+      background: $salmon;
+    }
+  }
+}
+
+.field__notification {
+  margin: 0rem;
+  font-family: $openSans, sans-serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: $salmon;
+}
+
+select {
+  position: relative;
+  width: 100%;
+  padding: 4px 6px;
+  overflow: hidden;
+  border: 0px;
+  border-radius: 0px;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0px;
+  color: $salmon;
+  z-index: 1;
+  cursor: pointer;
+}
+select option[value=""] {
+  display: none;
+}
+select + label {
+  position: absolute;
+  height: 1.1rem;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 4px 0px;
+  background: transparent;
+  border-bottom: 1px solid $night;
+  color: $salmon;
+  outline: 0px;
+  background: transparent URL("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NiIgaGVpZ2h0PSIzMyIgdmlld0JveD0iMCAwIDQ2IDMzIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNEOTcyNUEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNNSA3LjVsMTggMTggMTgtMTgiLz48L3N2Zz4=") no-repeat right center;
+  background-size: 16px 9px;
+  cursor: pointer;
+  z-index: 0;
+}

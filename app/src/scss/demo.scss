@@ -1,0 +1,32 @@
+.demo-section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #dadada;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.demo-section__panel {
+  float: left;
+  width: 45%;
+  margin: 0px 2%;
+  outline: 1px solid #cacaca;
+}
+.demo-section__panel--full-width {
+  @extend .demo-section__panel;
+  width: 100%;
+}
+.demo-section__panel-item {
+  padding: 1rem 2rem;
+}
+
+.demo-section__container {
+  outline: 5px solid #aaa;
+}
+.demo-section__column {
+  outline: 1px solid #ddd;
+}

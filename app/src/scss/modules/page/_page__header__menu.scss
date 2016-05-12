@@ -1,0 +1,22 @@
+
+.menu__items {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+.menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+.menu__item-link {
+  padding: 0px 10px;
+  border-right: 1px solid $warmGray1;
+  text-decoration: none;
+}
+
+.menu__item:last-child .menu__item-link {
+  border-right-width: 0px;
+}
